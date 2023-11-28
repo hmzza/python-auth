@@ -18,7 +18,7 @@ jobs:
 
     - name: Push Docker Image to Dockerhub
       run: |
-        echo $DOCKERHUB_TOKEN | docker login -u hmmza --password-stdin
+        echo $DOCKERHUB_TOKEN | docker login -u hmzza --password-stdin
         docker push hmzza/python-auth:latest
       env:
         DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
